@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <title>Nauffal Calculator</title>
+</head>
+<body>
+    <div id="container">
+        <div id="card">
+            <div class="contents tituloPagina">
+                <h1 id="tituloTop">Calculadora de Valor Futuro</h1>
+            </div>
+
+            <form action="#">
+                <div id="contentsCalculator">
+                    <div id="textoExplicativo">
+                        <p id="paragrafoExplicativo">
+                            Seja bem-vindo a <strong>Calculadora de Valor Futuro</strong>. Coloque os seus valores escolhidos abaixo.
+                        </p>
+                    </div>
+    
+                    <div id="alinhadorInput">
+                        <div class="paragrafo">
+                            <span class="txtSpanInput">Aporte Mensal</span>
+                            <input type="number" name="aporteMensal" class="inputValue aporteMensal" placeholder="Informe o aporte mensal">
+        
+                        </div>
+                        
+                        <div class="paragrafo">
+                            <span class="txtSpanInput">Quantidade de meses</span>
+                            <input type="number" name="quantidadeMeses" class="inputValue quantidadeMeses" placeholder="Quantidade de meses">
+                        </div>
+        
+                        <div class="paragrafo">
+                            <span class="txtSpanInput">Taxa de juros </span>
+                            <input type="number" name="taxaJuros" class="inputValue taxaJuros" placeholder="Informe a taxa de juros">
+                        </div>
+        
+    
+                        <div class="paragrafo">
+                            <span class="txtSpanInput">Resultado</span>
+                            <input type="number" name="resultadoInput" class="inputValue resultado" id="resultado" placeholder="Valor futuro">
+                        </div>
+                    </div>
+                </div>
+    
+    
+                <div class="contents btnCalcular">
+                    <button type="submit" class="buttonBottom" onclick="return valorFuturo(event)">
+                        Calcular
+                    </button>
+    
+                    <button type="reset" class="buttonBottom">
+                        Apagar
+                    </button>
+                </div>
+
+            </form>
+        </div>
+
+        <footer>
+            <p>
+                made with 💕 by 
+                <a href="https://github.com/vinicdev" id="vini">
+                    &copy; Vinicius Cardoso
+                </a>
+            </p>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

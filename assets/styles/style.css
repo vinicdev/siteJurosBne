@@ -1,0 +1,190 @@
+:root {
+    --gray: #edf5fc;
+    --black: #000000;
+    --bg: #92cdd3;
+    --white: #fff;
+    --white-light: #F1F1F1;
+    --red: #e63462;
+    --btn-color: #f96f3e;
+    --bg-card: #e3e6eb;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    background-color: var(--bg);
+}
+
+#container {
+    width: 30%;
+    margin: 100px auto;
+}
+
+#card {
+    width: 100%;
+    background-color: var(--bg-card);
+    border-radius: 5px;
+    box-shadow: 6px 6px 30px #00000042;
+    margin-bottom: 10px;
+}
+
+.tituloPagina {
+    border-radius: 5px 5px 0 0;
+}
+
+.btnCalcular {
+    border-radius: 0 0 5px 5px; 
+    
+}
+
+.contents {
+    width: 100%;
+    height: 60px;
+    background-color: var(--black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#tituloTop {
+    color: var(--white);
+    font-weight: 700;
+}
+
+#contentsCalculator {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 350px;
+}
+
+#textoExplicativo {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    height: 70px;
+    text-align: center;
+    margin-top: 45px;
+    border: 1px solid var(--black);
+    border-radius: 10px;
+}
+
+#paragrafoExplicativo {
+    color: var(--black);
+    font-size: 17px;
+}
+
+#alinhadorInput {
+    width: 80%;
+    margin: auto 0;
+}
+
+.paragrafo {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    align-items: center;
+}
+
+.btnCalcular {
+    display: flex;
+    flex-direction: row;
+    gap: 15px
+}
+
+.txtSpanInput {
+    color: var(--black);
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.inputValue {
+    border-radius: 5px;
+    height: 25px;
+    padding-left: 10px;
+    border: none
+}
+
+.inputValue:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+.buttonBottom {
+    border: none;
+    padding: 10px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: var(--btn-color);
+    font-weight: 300;
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 700;
+    transition: .8s;
+    text-transform: uppercase;
+}
+
+
+footer { 
+    text-align: center;
+    font-weight: 300;
+    font-size: 12px;
+}
+
+#vini {
+    text-decoration: none;
+    color: var(--red);
+}
+
+
+@media (max-width: 1424px) {
+    #tituloTop {
+       font-size: 20px;
+    }
+}
+
+@media (max-width: 1345px) {
+    #container {
+        width: 45%;
+    }
+}
+
+@media (max-width: 823px) {
+    #container {
+        width: 80%;
+    }
+}
+
+@media (max-width: 502px) {
+    #container {
+        width: 95%;
+    }
+}
+
+@media (max-width: 394px) {
+    .paragrafo {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    #tituloTop {
+        font-size: 16px;
+     }
+
+    #paragrafoExplicativo {
+        font-size: 14px;
+    }
+
+    .btnCalcular {
+        height: 100px;
+        flex-direction: column;
+        gap: 5px;
+    }
+}
